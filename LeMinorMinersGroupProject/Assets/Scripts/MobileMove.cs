@@ -1,26 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class MobileMovement : MonoBehaviour
+public class MobileMove : MonoBehaviour
 {
     bool movable = true;
 
-    public int moveDir = 0;
+    int moveDir = 0;
+    int mobileDir = 0;
     public float moveSpeed = 1.0f;
-    public int mobileDir = 0;
 
     public float jumpSpeed = 4.0f;
     bool grounded = false;
 
     Rigidbody2D rb;
-    Animator anim;
+    //Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
+        //anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -36,7 +35,7 @@ public class MobileMovement : MonoBehaviour
             velocity.x = moveDir * moveSpeed;
             rb.velocity = velocity;
 
-            anim.SetFloat("xInput", moveDir);
+            //anim.SetFloat("xInput", moveDir);
 
             if (moveDir > 0)
             {
@@ -69,6 +68,7 @@ public class MobileMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, 100 * jumpSpeed));
             grounded = false;
+            //anim.SetTrigger("Jump");
         }
     }
 
