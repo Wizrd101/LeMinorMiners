@@ -8,9 +8,9 @@ public class MobileMove : MonoBehaviour
 
     int moveDir = 0;
     int mobileDir = 0;
-    public float moveSpeed = 1.0f;
+    public float moveSpeed;
 
-    public float jumpSpeed = 4.0f;
+    public float jumpSpeed;
     bool grounded = false;
 
     Rigidbody2D rb;
@@ -79,7 +79,7 @@ public class MobileMove : MonoBehaviour
             grounded = true;
         }
 
-        if (other.gameObject.tag == "WinCollider")
+        if (other.gameObject.tag == "CutsceneCollider")
         {
             movable = false;
         }
