@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7fb2c39dc16edb04fb88310c507fe0a8
+guid: 4927b3235e8f9144b9b94236eafbac65
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GhostEnemy_0
+      name: GhostEnemyMove_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7391d141fa887374794e994a13822e29
-      internalID: 1662111638
+      spriteID: b35d8596c03e1a748b8ec13273d724e0
+      internalID: 1973180052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_1
+      name: GhostEnemyMove_1
       rect:
         serializedVersion: 2
         x: 32
@@ -154,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59bed73223399f74e8ed81e1b397d73f
-      internalID: 797799822
+      spriteID: 2ab2c8d4d4bee5a44b8d72badad4ab9b
+      internalID: -1654925538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_2
+      name: GhostEnemyMove_2
       rect:
         serializedVersion: 2
         x: 64
@@ -175,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f92d24166677f04fb17d13ea39d1429
-      internalID: 1443044612
+      spriteID: 9a18d24a8658cf9489181842cb703d8a
+      internalID: 837660017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_3
+      name: GhostEnemyMove_3
       rect:
         serializedVersion: 2
         x: 96
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb12d17e66291fb428bdb877c89d3854
-      internalID: 1654128236
+      spriteID: 458a3d9d4902466418908746bb5cc5b5
+      internalID: -538974490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_4
+      name: GhostEnemyMove_4
       rect:
         serializedVersion: 2
         x: 0
@@ -217,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dbd8b8f26e2f124ea89b9ffa62d3ec4
-      internalID: -463861250
+      spriteID: 465ed903fd2ad734b9c03db826537f4b
+      internalID: 1065937702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_5
+      name: GhostEnemyMove_5
       rect:
         serializedVersion: 2
         x: 32
@@ -238,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 859626567a56e274980b6ccf0ade07d8
-      internalID: 372077874
+      spriteID: abb09e16d09581f4d9dd6900e25f0fb0
+      internalID: -724809544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_6
+      name: GhostEnemyMove_6
       rect:
         serializedVersion: 2
         x: 64
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64e5ea2ed8dd8d54ea74a0792a9797be
-      internalID: -170257321
+      spriteID: 4715385336f87bb498d62de6004fdee5
+      internalID: -382005590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_7
+      name: GhostEnemyMove_7
       rect:
         serializedVersion: 2
         x: 96
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76865cc0bc1306747ad1bd5df00ac8b1
-      internalID: -1404214876
+      spriteID: bd90580ca783cd247824119cffdb3ebc
+      internalID: -713874543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_8
+      name: GhostEnemyMove_8
       rect:
         serializedVersion: 2
         x: 0
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c03eb4e45d8d24cb217afd6a3c2917
-      internalID: 730961705
+      spriteID: 121278812fd8e5643ace0c52507946f9
+      internalID: 1018361013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_9
+      name: GhostEnemyMove_9
       rect:
         serializedVersion: 2
         x: 32
@@ -322,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2da6e8a7a73f84391627aa37029caf
-      internalID: 1499377302
+      spriteID: 22388b74e0950d54b9c2c8c05527addd
+      internalID: 1925403494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_10
+      name: GhostEnemyMove_10
       rect:
         serializedVersion: 2
         x: 64
@@ -343,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dd5ba433a8113c47803077271ba0555
-      internalID: -477096739
+      spriteID: 4e91248ce9f3279458c82c2ea7dcbfce
+      internalID: -2080944223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_11
+      name: GhostEnemyMove_11
       rect:
         serializedVersion: 2
         x: 96
@@ -364,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7730e6ad4c7000d4282bc2a19f68d838
-      internalID: -2051029132
+      spriteID: ca8103c8e2a2a394ebc5258b4eb21258
+      internalID: -193630944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_12
+      name: GhostEnemyMove_12
       rect:
         serializedVersion: 2
         x: 0
@@ -385,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc8fe1cba3572e46b1a59689f9d6ea8
-      internalID: 2026980936
+      spriteID: 73779c4df9e327b4a88ab6fdb356b604
+      internalID: 310182861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_13
+      name: GhostEnemyMove_13
       rect:
         serializedVersion: 2
         x: 32
@@ -406,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54dd76f8fc52ebe429f1ea583703efbf
-      internalID: -723080985
+      spriteID: 61482422eeebb5e4ebf1e879fd119298
+      internalID: -808996119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostEnemy_14
+      name: GhostEnemyMove_14
       rect:
         serializedVersion: 2
         x: 64
@@ -427,8 +427,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 922e3092ca1ad9e4f92ee742bc2d6be6
-      internalID: 1540333433
+      spriteID: 01d19eb65ad41ba4f89e5b3610310305
+      internalID: -528784665
       vertices: []
       indices: 
       edges: []
@@ -444,21 +444,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GhostEnemy_11: -2051029132
-      GhostEnemy_10: -477096739
-      GhostEnemy_0: 1662111638
-      GhostEnemy_8: 730961705
-      GhostEnemy_6: -170257321
-      GhostEnemy_5: 372077874
-      GhostEnemy_7: -1404214876
-      GhostEnemy_13: -723080985
-      GhostEnemy_3: 1654128236
-      GhostEnemy_1: 797799822
-      GhostEnemy_2: 1443044612
-      GhostEnemy_9: 1499377302
-      GhostEnemy_4: -463861250
-      GhostEnemy_12: 2026980936
-      GhostEnemy_14: 1540333433
+      GhostEnemyMove_1: -1654925538
+      GhostEnemyMove_12: 310182861
+      GhostEnemyMove_9: 1925403494
+      GhostEnemyMove_2: 837660017
+      GhostEnemyMove_14: -528784665
+      GhostEnemyMove_13: -808996119
+      GhostEnemyMove_5: -724809544
+      GhostEnemyMove_7: -713874543
+      GhostEnemyMove_0: 1973180052
+      GhostEnemyMove_11: -193630944
+      GhostEnemyMove_4: 1065937702
+      GhostEnemyMove_6: -382005590
+      GhostEnemyMove_3: -538974490
+      GhostEnemyMove_8: 1018361013
+      GhostEnemyMove_10: -2080944223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
