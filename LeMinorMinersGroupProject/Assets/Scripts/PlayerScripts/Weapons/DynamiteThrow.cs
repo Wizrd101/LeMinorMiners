@@ -19,7 +19,7 @@ public class DynamiteThrow : MonoBehaviour
         }
     }
 
-    void Shoot()
+    public void Shoot()
     {
         GameObject newBomb = Instantiate(dynamitePrefab, shotPoint.position, shotPoint.rotation);
         if (playerTransform.localScale.x == 1)
