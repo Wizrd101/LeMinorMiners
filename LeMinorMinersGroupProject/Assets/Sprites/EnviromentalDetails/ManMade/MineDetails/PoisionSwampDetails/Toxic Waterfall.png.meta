@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1810ab5b2979de4b95f8a1d07f7a28c
+guid: 940117f0d876c114994e62d5eb1fd47a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoisonPuddlesAndBarrel_0
+      name: Toxic Waterfall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0023645b9bd77b4887376db26900389
-      internalID: -547634952
+      spriteID: d9dce387c60394949ac3dd93a988f498
+      internalID: 677150274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonPuddlesAndBarrel_1
+      name: Toxic Waterfall_1
       rect:
         serializedVersion: 2
         x: 32
@@ -154,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c231e1c7dec7d547896d4f46af751e7
-      internalID: 919604269
+      spriteID: b1a016552ffb6f24d9be1a9dce910abb
+      internalID: 1725670824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonPuddlesAndBarrel_2
+      name: Toxic Waterfall_2
       rect:
         serializedVersion: 2
         x: 0
@@ -175,8 +175,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f605d3e4ff0bab4469dc4ddb46229671
-      internalID: 267456022
+      spriteID: 8a2abf9f191e5e34c93272ac44f6e7f7
+      internalID: -220925119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toxic Waterfall_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecf2e07352ffe547b3a363e7a3a9ab4
+      internalID: 1304993918
       vertices: []
       indices: 
       edges: []
@@ -192,9 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PoisonPuddlesAndBarrel_0: -547634952
-      PoisonPuddlesAndBarrel_2: 267456022
-      PoisonPuddlesAndBarrel_1: 919604269
+      Toxic Waterfall_2: -220925119
+      Toxic Waterfall_1: 1725670824
+      Toxic Waterfall_3: 1304993918
+      Toxic Waterfall_0: 677150274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
