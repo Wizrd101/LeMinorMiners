@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79b515a8ccd5b2147b0e6dc5df736457
+guid: 43a2b0e24b0dbfe48ad7d1dc1f1d71d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,13 +119,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnusuallyLargRatIdle_0
+      name: MenuPlanksInverted_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc894357cc82484092a76ec78643635
+      internalID: -329179190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuPlanksInverted_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874cfc16072c73d47a2e5ee54a50aca8
+      internalID: 356245511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuPlanksInverted_2
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa00b32b1f1fa848a99d78b0bad55db
-      internalID: 188084789
+      spriteID: 3f177830bfbe11348822ab5de70ab624
+      internalID: -680607910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnusuallyLargRatIdle_1
+      name: MenuPlanksInverted_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,62 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db5637110190bc4594223f4f4d82132
-      internalID: -164842738
+      spriteID: ae4407a28f3242042b77549dd5889d5f
+      internalID: 1077170493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnusuallyLargRatIdle_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 394e50f0d151cd7418b6ac4d2dbfa97c
-      internalID: 1908352853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UnusuallyLargRatIdle_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0663778445353874c8a543971f3a71f6
-      internalID: -817149575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UnusuallyLargRatIdle_4
+      name: MenuPlanksInverted_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e37532458c3b4d040b9836fc06fa5254
-      internalID: -1514721778
+      spriteID: b0c722a75d2f58544aac1234c666bff1
+      internalID: -1560581294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnusuallyLargRatIdle_5
+      name: MenuPlanksInverted_5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11afe87e7f79afb4999253262378e838
-      internalID: -1076291251
+      spriteID: 5c092e6e290330c4daed918eeaa0c5aa
+      internalID: -1401107268
       vertices: []
       indices: 
       edges: []
@@ -255,12 +255,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UnusuallyLargRatIdle_3: -817149575
-      UnusuallyLargRatIdle_0: 188084789
-      UnusuallyLargRatIdle_1: -164842738
-      UnusuallyLargRatIdle_4: -1514721778
-      UnusuallyLargRatIdle_5: -1076291251
-      UnusuallyLargRatIdle_2: 1908352853
+      MenuPlanksInverted_3: 1077170493
+      MenuPlanksInverted_2: -680607910
+      MenuPlanksInverted_4: -1560581294
+      MenuPlanksInverted_0: -329179190
+      MenuPlanksInverted_5: -1401107268
+      MenuPlanksInverted_1: 356245511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a080cada856e2541a2c018b496ae63f
+guid: c1fffbc24c9a35d4e9894ec4069e13de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NormalSnake_0
+      name: InexplicablyBuffMinerGhostMove_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ab323e2a0eea440ab19e650420d7ee
+      internalID: 1239486370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7154eb671cfbf964eb47b0849a260e48
+      internalID: 68518533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256ae8f9f5257cb41bcaea10eb108311
+      internalID: 2144377982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9229f9794abb49c48a65c64b790a0207
+      internalID: -937711034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_4
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cccac3b28e8d42140b75e46b44849676
-      internalID: -497152576
+      spriteID: 25c1499184dd0b0458826604ddf4da9e
+      internalID: -974990802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NormalSnake_1
+      name: InexplicablyBuffMinerGhostMove_5
       rect:
         serializedVersion: 2
         x: 32
@@ -154,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184cce238a4afbf4da8b3a1b3bb56880
-      internalID: 369255279
+      spriteID: 09e10afb4cad669498a4006730d38ab0
+      internalID: 143459114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NormalSnake_2
+      name: InexplicablyBuffMinerGhostMove_6
       rect:
         serializedVersion: 2
         x: 64
@@ -175,14 +259,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 943393de013eb03458378d489789220c
-      internalID: 1882790125
+      spriteID: 398c52ee34cfcad4d8a6d97fe275088b
+      internalID: 332790075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NormalSnake_3
+      name: InexplicablyBuffMinerGhostMove_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcb80aca410fe64f896b5ae12056795
+      internalID: -2136200953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_8
       rect:
         serializedVersion: 2
         x: 0
@@ -196,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bda39802c3584447ac8553a81bf576e
-      internalID: 55698413
+      spriteID: e4b451fc472f48a4c929297917c517c5
+      internalID: -1342501569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NormalSnake_4
+      name: InexplicablyBuffMinerGhostMove_9
       rect:
         serializedVersion: 2
         x: 32
@@ -217,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d0f6a018ea4414b810dca7d22d289e
-      internalID: -1111366509
+      spriteID: 4efa29d680742804e8aa5059169cda8d
+      internalID: -953390949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NormalSnake_5
+      name: InexplicablyBuffMinerGhostMove_10
       rect:
         serializedVersion: 2
         x: 64
@@ -238,14 +343,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58136bd81566e2e45b910bfc4315986c
-      internalID: 952362389
+      spriteID: ec25409a6250f5949a53f23abc656df7
+      internalID: -2106437330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NormalSnake_6
+      name: InexplicablyBuffMinerGhostMove_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7040f08fb3fdcd49b87f7c8d3b5c1c3
+      internalID: 1859940252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_12
       rect:
         serializedVersion: 2
         x: 0
@@ -259,8 +385,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d7917472b455d14f974817a5cddc5df
-      internalID: 2053432833
+      spriteID: 6d5d8c2139a2870419ad0c5690574292
+      internalID: -1792616815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074fcd424464cd940ac35edc50eb2f75
+      internalID: -583562511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InexplicablyBuffMinerGhostMove_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e36cb3769d8989468979b8fe12ef16a
+      internalID: -1485248634
       vertices: []
       indices: 
       edges: []
@@ -276,13 +444,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NormalSnake_0: -497152576
-      NormalSnake_5: 952362389
-      NormalSnake_6: 2053432833
-      NormalSnake_4: -1111366509
-      NormalSnake_2: 1882790125
-      NormalSnake_3: 55698413
-      NormalSnake_1: 369255279
+      InexplicablyBuffMinerGhostMove_11: 1859940252
+      InexplicablyBuffMinerGhostMove_14: -1485248634
+      InexplicablyBuffMinerGhostMove_7: -2136200953
+      InexplicablyBuffMinerGhostMove_2: 2144377982
+      InexplicablyBuffMinerGhostMove_12: -1792616815
+      InexplicablyBuffMinerGhostMove_5: 143459114
+      InexplicablyBuffMinerGhostMove_8: -1342501569
+      InexplicablyBuffMinerGhostMove_6: 332790075
+      InexplicablyBuffMinerGhostMove_1: 68518533
+      InexplicablyBuffMinerGhostMove_9: -953390949
+      InexplicablyBuffMinerGhostMove_10: -2106437330
+      InexplicablyBuffMinerGhostMove_3: -937711034
+      InexplicablyBuffMinerGhostMove_13: -583562511
+      InexplicablyBuffMinerGhostMove_0: 1239486370
+      InexplicablyBuffMinerGhostMove_4: -974990802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
