@@ -33,7 +33,7 @@ public class LanternOnOff : MonoBehaviour
     {
         if (other.tag == "OilPickup")
         {
-            oil += 100;
+            oilAmount += 100;
         }
     }
 
@@ -46,7 +46,7 @@ public class LanternOnOff : MonoBehaviour
         }
         else
         {
-            if (oil > 0)
+            if (oilAmount > 0)
             {
                 lanternOnLight.enabled = true;
                 lanternOffLight.enabled = false;

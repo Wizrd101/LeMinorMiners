@@ -1171,7 +1171,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2788,8 +2788,8 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 42
     m_Data: {fileID: 1055583769, guid: dbacc047dd016784bbd0c1eee73c3fb3, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 809310190, guid: 70214b0872a4f4049a4ba5c2246c66d8, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: 532416668, guid: 70214b0872a4f4049a4ba5c2246c66d8, type: 3}
   - m_RefCount: 1
@@ -2850,8 +2850,8 @@ Tilemap:
     m_Data: {fileID: 1924825015, guid: dbacc047dd016784bbd0c1eee73c3fb3, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1950325271, guid: 70214b0872a4f4049a4ba5c2246c66d8, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 809310190, guid: 70214b0872a4f4049a4ba5c2246c66d8, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 206
     m_Data:
@@ -3171,7 +3171,7 @@ GameObject:
   - component: {fileID: 2037095677}
   - component: {fileID: 2037095676}
   m_Layer: 0
-  m_Name: Light 2D
+  m_Name: Global Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
