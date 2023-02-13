@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class LanternOnOff : MonoBehaviour
 {
-    public Light lanternOnLight;
-    public Light lanternOffLight;
+    public Light2D lanternOnLight;
+    public Light2D lanternOffLight;
 
     public float oilAmount;
     public float usageRate;
@@ -15,7 +16,7 @@ public class LanternOnOff : MonoBehaviour
         lanternOnLight.enabled = false;
         lanternOffLight.enabled = true;
     }
-    
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -26,14 +27,16 @@ public class LanternOnOff : MonoBehaviour
         if (lanternOnLight.enabled)
         {
             oilAmount -= usageRate * Time.deltaTime;
+            oilAmount = Mathf.Clamp(oilAmount, 0, 500);
         }
     }
 
-    void OnTriggerEnter2D (Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "OilPickup")
         {
             oilAmount += 100;
+            oilAmount = Mathf.Clamp(oilAmount, 0, 500);
         }
     }
 
