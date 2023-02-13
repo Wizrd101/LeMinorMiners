@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class LanternOnOff : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class LanternOnOff : MonoBehaviour
 
     public float oilAmount;
     public float usageRate;
+
+    public Slider oilSlider;
 
     void Start()
     {
@@ -29,6 +32,13 @@ public class LanternOnOff : MonoBehaviour
             oilAmount -= usageRate * Time.deltaTime;
             oilAmount = Mathf.Clamp(oilAmount, 0, 500);
         }
+
+        if (oilAmount == 0 && lanternOnLight.enabled)
+        {
+            LanternDoStuff();
+        }
+
+        oilSlider.value = oilAmount;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -42,7 +52,7 @@ public class LanternOnOff : MonoBehaviour
 
     public void LanternDoStuff()
     {
-        if (lanternOnLight.enabled == true)
+        if (lanternOnLight.enabled)
         {
             lanternOnLight.enabled = false;
             lanternOffLight.enabled = true;
