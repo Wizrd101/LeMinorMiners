@@ -1719,7 +1719,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1301636822}
   - component: {fileID: 1301636819}
-  - component: {fileID: 1301636821}
   - component: {fileID: 1301636820}
   m_Layer: 6
   m_Name: NoPostCamera
@@ -1822,14 +1821,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!81 &1301636821
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301636818}
-  m_Enabled: 1
 --- !u!4 &1301636822
 Transform:
   m_ObjectHideFlags: 0
