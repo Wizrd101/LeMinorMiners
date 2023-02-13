@@ -11,6 +11,8 @@ public class DynamiteThrow : MonoBehaviour
     public float launchForceY;
     public Transform shotPoint;
 
+    public int ammo = 10;
+
     void Update()
     {
         if (Input.GetButtonDown("Fire2"))
@@ -21,14 +23,26 @@ public class DynamiteThrow : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject newBomb = Instantiate(dynamitePrefab, shotPoint.position, shotPoint.rotation);
-        if (playerTransform.localScale.x == 1)
+        if (ammo > 0)
         {
-            newBomb.GetComponent<Rigidbody2D>().velocity = new Vector2(launchForceX, launchForceY);
+            GameObject newBomb = Instantiate(dynamitePrefab, shotPoint.position, shotPoint.rotation);
+            if (playerTransform.localScale.x == 1)
+            {
+                newBomb.GetComponent<Rigidbody2D>().velocity = new Vector2(launchForceX, launchForceY);
+            }
+            else
+            {
+                newBomb.GetComponent<Rigidbody2D>().velocity = new Vector2(-launchForceX, launchForceY);
+            }
+            ammo--;
         }
-        else
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "DynamitePickup")
         {
-            newBomb.GetComponent<Rigidbody2D>().velocity = new Vector2(-launchForceX, launchForceY);
+            ammo += 4;
         }
     }
 }

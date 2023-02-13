@@ -112,11 +112,17 @@ public class GroundEnemyPace : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        goingOnGround = true;
+        if (other.gameObject.tag == "Ground")
+        {
+            goingOnGround = true;
+        }
     }
 
     void OnTriggerExit2D (Collider2D other)
     {
-        goingOnGround = false;
+        if (other.gameObject.tag == "Ground")
+        {
+            goingOnGround = false;
+        }
     }
 }
