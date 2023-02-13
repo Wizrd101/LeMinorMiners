@@ -24,6 +24,16 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("LevelThreeScene");
     }
+    
+    public void InstructionsStart()
+    {
+        SceneManager.LoadScene("InstructionsScene");
+    }
+
+    public void SettingsStart()
+    {
+        SceneManager.LoadScene("SettingsScene");
+    }
 
     public void Quit()
     {
