@@ -9,6 +9,8 @@ public class DynamiteProjectileDestroy : MonoBehaviour
         if (other.tag != "Player")
         {
             Destroy(gameObject);
+
+            // Explosion
         }
     }
 }

@@ -6,7 +6,7 @@ public class MobileMove : MonoBehaviour
 {
     bool movable = true;
 
-    int moveDir = 0;
+    public int moveDir = 0;
     int mobileDir = 0;
     public float moveSpeed;
 
@@ -22,7 +22,7 @@ public class MobileMove : MonoBehaviour
         //anim = GetComponentInChildren<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (movable)
         {
