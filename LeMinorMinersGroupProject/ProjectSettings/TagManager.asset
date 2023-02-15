@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Enemy
   - OilPickup
+  - PlayerDamage
+  - DynamitePickup
   layers:
   - Default
   - TransparentFX
