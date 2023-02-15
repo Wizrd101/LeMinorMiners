@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DynamiteThrow : MonoBehaviour
 {
+    DifficultyAndControls dac;
+
     public GameObject dynamitePrefab;
     public Transform playerTransform;
 
@@ -42,7 +44,18 @@ public class DynamiteThrow : MonoBehaviour
     {
         if (other.gameObject.tag == "DynamitePickup")
         {
-            ammo += 4;
+            if (PlayerPrefs.GetInt("diff") == 1)
+            {
+                ammo += 5;
+            }
+            else if (PlayerPrefs.GetInt("diff") == 2)
+            {
+                ammo += 4;
+            }
+            else if (PlayerPrefs.GetInt("diff") == 3)
+            {
+                ammo += 3;
+            }
         }
     }
 }

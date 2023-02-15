@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour
 
 	public void ExitGame()
     {
+        PlayerPrefs.DeleteAll();
 		Application.Quit();
 	}
 

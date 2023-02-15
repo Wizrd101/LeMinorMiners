@@ -343,7 +343,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871114280}
-        m_TargetAssemblyTypeName: InstructionMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyAndControls, Assembly-CSharp
         m_MethodName: SetPCControls
         m_Mode: 1
         m_Arguments:
@@ -477,7 +477,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871114280}
-        m_TargetAssemblyTypeName: InstructionMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyAndControls, Assembly-CSharp
         m_MethodName: SetEasyMode
         m_Mode: 1
         m_Arguments:
@@ -611,7 +611,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871114280}
-        m_TargetAssemblyTypeName: InstructionMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyAndControls, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 871114275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be6514d4ea9abf44be7326a6bc05684, type: 3}
+  m_Script: {fileID: 11500000, guid: c1f1e0db42af97c4e8e684d1f34ffd95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   diff: 2
@@ -1754,7 +1754,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871114280}
-        m_TargetAssemblyTypeName: InstructionMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyAndControls, Assembly-CSharp
         m_MethodName: SetNormalMode
         m_Mode: 1
         m_Arguments:
@@ -1888,7 +1888,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871114280}
-        m_TargetAssemblyTypeName: InstructionMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyAndControls, Assembly-CSharp
         m_MethodName: SetHardMode
         m_Mode: 1
         m_Arguments:
@@ -2698,7 +2698,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871114280}
-        m_TargetAssemblyTypeName: InstructionMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyAndControls, Assembly-CSharp
         m_MethodName: SetMobileControls
         m_Mode: 1
         m_Arguments:
