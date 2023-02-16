@@ -1,6 +1,7 @@
  using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -8,7 +9,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public PlayerShoot playerShoot;
     public GameObject bullet;
-    public int currentCylinder, maxMagSize = 6, currentReserves, maxReserveSize = 90;
+    public int currentMag, maxMagSize = 6, currentReserves, maxReserveSize = 90;
     private bool reload = false;
     public float speed;
     public float bulletLifeTime = 1.5f;
@@ -35,7 +36,7 @@ public class PlayerShoot : MonoBehaviour
         timer += Time.deltaTime;
         if (Time.timeScale == 1)
         {
-            if (Input.GetButtonDown("Fire1") && timer >= shootDelay &&  currentCylinder > 0 && reload == false)
+            if (Input.GetButtonDown("Fire1") && timer >= shootDelay &&  currentMag > 0 && reload == false)
             {
                 animator.SetTrigger("Active");
                 GameObject bulletSpawn = Instantiate(bullet, transform.position, Quaternion.identity);
@@ -46,14 +47,15 @@ public class PlayerShoot : MonoBehaviour
                 shootDirection.Normalize();
                 bulletSpawn.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
                 Destroy(bulletSpawn, bulletLifeTime);
-                currentCylinder--;
+                currentMag--;
                 GetComponent<AudioSource>().PlayOneShot(shootSound);
                 timer = 0;
             }
 
+            //reload when r is pressed
             reloadTimer += Time.deltaTime;
             
-            if (Input.GetKeyDown(KeyCode.R) && currentCylinder < maxMagSize)
+            if (currentMag == 0 )
             {
                 reloadTimer = 0;
                 playerShoot.Reload();
@@ -80,16 +82,18 @@ public class PlayerShoot : MonoBehaviour
 
     public void Reload()
     {
-        if( currentCylinder < maxMagSize)
+        if( currentMag < maxMagSize)
         {
             animator.SetTrigger("reload");
         }
-        int reloadAmount = maxMagSize - currentCylinder;
+        int reloadAmount = maxMagSize - currentMag;
         reloadAmount = (currentReserves - reloadAmount) >= 0 ? reloadAmount : currentReserves;
-        currentCylinder += reloadAmount;
+        //add rounds to your gun
+        currentMag += reloadAmount;
+        //take away rounds from reserve
         currentReserves -= reloadAmount;
     }
-
+    //the amount of rounds that get picked up
     public void AddRounds(int roundAmmount)
     {
         currentReserves += roundAmmount;
