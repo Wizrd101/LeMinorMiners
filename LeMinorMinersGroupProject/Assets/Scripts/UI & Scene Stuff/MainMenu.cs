@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    DifficultyAndControls dac;
-
     public TextMeshProUGUI menuDiffTxt;
     public TextMeshProUGUI menuContTxt;
 

@@ -11,7 +11,7 @@ public class MobileMove : MonoBehaviour
     public float moveSpeed;
 
     public float jumpSpeed;
-    bool grounded = false;
+    public bool grounded = false;
 
     Rigidbody2D rb;
     //Animator anim;
@@ -22,7 +22,7 @@ public class MobileMove : MonoBehaviour
         //anim = GetComponentInChildren<Animator>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (movable)
         {
@@ -53,6 +53,7 @@ public class MobileMove : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 Jump();
+                Debug.Log("Jump Button Pressed");
             }
         }
     }
@@ -69,6 +70,11 @@ public class MobileMove : MonoBehaviour
             rb.AddForce(new Vector2(0, 100 * jumpSpeed));
             grounded = false;
             //anim.SetTrigger("Jump");
+            Debug.Log("Jumped");
+        }
+        else
+        {
+            Debug.Log("Did not Jump");
         }
     }
 
