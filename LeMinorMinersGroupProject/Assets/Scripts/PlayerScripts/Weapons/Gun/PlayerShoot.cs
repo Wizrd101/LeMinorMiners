@@ -21,6 +21,10 @@ public class PlayerShoot : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
 
+    float fireRate = 10;
+    float lastFired;
+
+
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -36,20 +40,25 @@ public class PlayerShoot : MonoBehaviour
         timer += Time.deltaTime;
         if (Time.timeScale == 1)
         {
-            if (Input.GetButtonDown("Fire1") && timer >= shootDelay &&  currentMag > 0 && reload == false)
+            if (Input.GetButton("Fire1") && timer >= shootDelay &&  currentMag > 0 && reload == false)
             {
-                animator.SetTrigger("Active");
-                GameObject bulletSpawn = Instantiate(bullet, transform.position, Quaternion.identity);
-                Vector3 mousePosition = Input.mousePosition;
-                mousePosition.z = -Camera.main.transform.position.z;
-                mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-                Vector3 shootDirection = mousePosition - transform.position;
-                shootDirection.Normalize();
-                bulletSpawn.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
-                Destroy(bulletSpawn, bulletLifeTime);
-                currentMag--;
-                GetComponent<AudioSource>().PlayOneShot(shootSound);
-                timer = 0;
+                if (Time.time - lastFired > 1 / fireRate)
+                {
+                    animator.SetTrigger("Active");
+                    lastFired =Time.time;
+                    GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
+                    Vector3 mousePosition = Input.mousePosition;
+                    mousePosition.z = -Camera.main.transform.position.z;
+                    mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+                    Vector3 shootDirection = mousePosition - transform.position;
+                    shootDirection.Normalize();
+                    bulletClone.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
+                    Destroy(bulletClone, bulletLifeTime);
+
+                    currentMag--;
+                    GetComponent<AudioSource>().PlayOneShot(shootSound);
+                    timer = 0;
+                }
             }
 
             //reload when r is pressed
