@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DynamiteThrow : MonoBehaviour
 {
-    DifficultyAndControls dac;
-
     public GameObject dynamitePrefab;
     public Transform playerTransform;
 

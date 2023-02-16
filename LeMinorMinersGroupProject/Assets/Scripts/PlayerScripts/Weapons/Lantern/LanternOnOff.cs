@@ -8,6 +8,7 @@ public class LanternOnOff : MonoBehaviour
 {
     public Light2D lanternOnLight;
     public Light2D lanternOffLight;
+    public bool lanternIsOn = false;
 
     public float oilAmount;
     public float usageRate;
@@ -47,6 +48,7 @@ public class LanternOnOff : MonoBehaviour
         {
             lanternOnLight.enabled = false;
             lanternOffLight.enabled = true;
+            lanternIsOn = false;
         }
         else
         {
@@ -54,6 +56,7 @@ public class LanternOnOff : MonoBehaviour
             {
                 lanternOnLight.enabled = true;
                 lanternOffLight.enabled = false;
+                lanternIsOn = true;
             }
         }
     }
