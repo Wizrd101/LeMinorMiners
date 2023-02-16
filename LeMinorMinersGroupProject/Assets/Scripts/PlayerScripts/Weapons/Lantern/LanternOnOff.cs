@@ -41,15 +41,6 @@ public class LanternOnOff : MonoBehaviour
         oilSlider.value = oilAmount;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "OilPickup")
-        {
-            oilAmount += 100;
-            oilAmount = Mathf.Clamp(oilAmount, 0, 500);
-        }
-    }
-
     public void LanternDoStuff()
     {
         if (lanternOnLight.enabled)
@@ -64,6 +55,27 @@ public class LanternOnOff : MonoBehaviour
                 lanternOnLight.enabled = true;
                 lanternOffLight.enabled = false;
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "OilPickup")
+        {
+            int diff = PlayerPrefs.GetInt("diff");
+            if (diff == 1)
+            {
+                oilAmount += 150;
+            }
+            else if (diff == 2)
+            {
+                oilAmount += 100;
+            }
+            else
+            {
+                oilAmount += 75;
+            }
+            oilAmount = Mathf.Clamp(oilAmount, 0, 500);
         }
     }
 }
