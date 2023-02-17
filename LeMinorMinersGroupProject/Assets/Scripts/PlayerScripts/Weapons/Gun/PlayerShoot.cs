@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+
+    //they are magazines, not clips
     public PlayerShoot playerShoot;
     public GameObject bullet;
     public int currentMag, maxMagSize = 6, currentReserves, maxReserveSize = 90;
@@ -18,6 +20,7 @@ public class PlayerShoot : MonoBehaviour
     float reloadTimer = 0.0f;
     public float shootDelay;
     public static bool grounded = false;
+    
     Animator animator;
     SpriteRenderer spriteRenderer;
 
@@ -40,21 +43,13 @@ public class PlayerShoot : MonoBehaviour
         timer += Time.deltaTime;
         if (Time.timeScale == 1)
         {
-            if (Input.GetButton("Fire1") && timer >= shootDelay &&  currentMag > 0 && reload == false)
+            if (Input.GetButton("Fire1") &&  currentMag > 0 && reload == false)
             {
+                animator.SetTrigger("Active");
                 if (Time.time - lastFired > 1 / fireRate)
                 {
-                    animator.SetTrigger("Active");
-                    lastFired =Time.time;
-                    GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
-                    Vector3 mousePosition = Input.mousePosition;
-                    mousePosition.z = -Camera.main.transform.position.z;
-                    mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-                    Vector3 shootDirection = mousePosition - transform.position;
-                    shootDirection.Normalize();
-                    bulletClone.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
-                    Destroy(bulletClone, bulletLifeTime);
-
+                 
+                    playerShoot.AutomaticFire();
                     currentMag--;
                     GetComponent<AudioSource>().PlayOneShot(shootSound);
                     timer = 0;
@@ -64,17 +59,20 @@ public class PlayerShoot : MonoBehaviour
             //reload when r is pressed
             reloadTimer += Time.deltaTime;
             
-            if (currentMag == 0 )
+            if (currentMag == 0 && currentReserves > 0)
             {
                 reloadTimer = 0;
                 playerShoot.Reload();
                 reload = true;
+                
             }
-            if (reloadTimer >= 1.25)
+            if (reloadTimer >= 1.75 )
             {
+              
                 reload = false;
             }
-
+            
+            //flipping the gun
             animator.SetFloat("xInput", xInput);
             animator.SetBool("grounded", grounded);
             if (xInput < 0)
@@ -110,5 +108,18 @@ public class PlayerShoot : MonoBehaviour
         {
             currentReserves = maxReserveSize;
         }
+    }
+     //full auto
+    public void AutomaticFire()
+    {
+        lastFired = Time.time;
+        GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = -Camera.main.transform.position.z;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        Vector3 shootDirection = mousePosition - transform.position;
+        shootDirection.Normalize();
+        bulletClone.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
+        Destroy(bulletClone, bulletLifeTime);
     }
 }

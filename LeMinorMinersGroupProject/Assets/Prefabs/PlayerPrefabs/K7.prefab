@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1852361295, guid: 60bf788b0f32f70449a44c7b53a79ea2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -126,11 +126,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerShoot: {fileID: 5469484081951037751}
   bullet: {fileID: 6141035903209900905, guid: 62c04b6dd7e5b3a45b15ca6dd2bf65b2, type: 3}
-  currentMag: 35
-  maxMagSize: 35
-  currentReserves: 70
-  maxReserveSize: 70
-  speed: 35
+  currentMag: 30
+  maxMagSize: 30
+  currentReserves: 180
+  maxReserveSize: 180
+  speed: 40
   bulletLifeTime: 1.5
   shootSound: {fileID: 0}
   shootDelay: 0
