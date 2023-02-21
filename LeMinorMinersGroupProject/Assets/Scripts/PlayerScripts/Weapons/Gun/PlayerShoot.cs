@@ -24,7 +24,7 @@ public class PlayerShoot : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
 
-    float fireRate = 10;
+    public float fireRate = 10;
     float lastFired;
 
 
