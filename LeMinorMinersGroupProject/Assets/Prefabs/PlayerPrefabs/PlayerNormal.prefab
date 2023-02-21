@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8391907058912221047}
   - component: {fileID: 8391907058912221046}
   - component: {fileID: 8391907058912221033}
+  - component: {fileID: 7693456115125124116}
   m_Layer: 0
   m_Name: PlayerNormal
   m_TagString: Player
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2086466781, guid: d37be558456348f4bb6d47b9f8184e43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -253,6 +254,26 @@ MonoBehaviour:
   oilAmount: 300
   usageRate: 1
   oilSlider: {fileID: 0}
+--- !u!95 &7693456115125124116
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391907058912221032}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86cf06a83b242cb41a1a4cca17f9cb4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &8391907059278392371
 GameObject:
   m_ObjectHideFlags: 0
