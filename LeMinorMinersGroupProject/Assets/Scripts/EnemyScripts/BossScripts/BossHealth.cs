@@ -51,11 +51,11 @@ public class BossHealth : MonoBehaviour
             {
                 if (sceneIndex == 1)
                 {
-
+                    PlayerPrefs.SetInt("Level2Unlock", 1);
                 }
                 else if (sceneIndex == 2)
                 {
-
+                    PlayerPrefs.SetInt("Level3Unlock", 1);
                 }
                 else if (sceneIndex == 3)
                 {
