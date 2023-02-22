@@ -9,7 +9,7 @@ public class SimpleMinerGhostAI : MonoBehaviour
 
     public Transform player;
 
-    public float moveSpeed = 3.0f;
+    public float moveSpeed;
 
     public bool fightTriggered = false;
 
@@ -17,24 +17,40 @@ public class SimpleMinerGhostAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        if (PlayerPrefs.GetInt("diff") == 1)
+        {
+            moveSpeed = 2.5f;
+        }
+        else if (PlayerPrefs.GetInt("diff") == 1)
+        {
+            moveSpeed = 3f;
+        }
+        else
+        {
+            moveSpeed = 3.5f;
+        }
     }
 
     void FixedUpdate()
     {
-        Vector2 moveDir = player.position - transform.position;
-        moveDir.Normalize();
-        rb.velocity = moveDir * moveSpeed;
-        if (moveDir.x >= 0)
+        if (fightTriggered)
         {
-            Vector3 scale = transform.localScale;
-            scale.x = -1;
-            transform.localScale = scale;
-        }
-        else
-        {
-            Vector3 scale = transform.localScale;
-            scale.x = 1;
-            transform.localScale = scale;
+            Vector2 moveDir = player.position - transform.position;
+            moveDir.Normalize();
+            rb.velocity = moveDir * moveSpeed;
+            if (moveDir.x >= 0)
+            {
+                Vector3 scale = transform.localScale;
+                scale.x = -1;
+                transform.localScale = scale;
+            }
+            else
+            {
+                Vector3 scale = transform.localScale;
+                scale.x = 1;
+                transform.localScale = scale;
+            }
         }
     }
 

@@ -3,15 +3,31 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public TextMeshProUGUI menuDiffTxt;
     public TextMeshProUGUI menuContTxt;
 
+    public Button LevelTwoButton;
+    public Button LevelThreeButton;
+
+    void Awake()
+    {
+        if (PlayerPrefs.GetInt("FirstTime") == 0)
+        {
+            PlayerPrefs.SetInt("Level2Unlock", 0);
+            PlayerPrefs.SetInt("Level3Unlock", 0);
+        }
+    }
+
     void Start()
     {
+        // Making it so that the locked levels don't reset their locks every time the scene is reloaded
+        PlayerPrefs.SetInt("FirstTime", 1);
 
+        // Setting Difficulty and Controls
         if (PlayerPrefs.GetInt("diff") == 1)
         {
             menuDiffTxt.text = "Difficulty: Easy";
@@ -32,6 +48,25 @@ public class MainMenu : MonoBehaviour
         else
         {
             menuContTxt.text = "Controls: On-Screen";
+        }
+
+        // Making the levels 2 and 3 locked or unlocked
+        if (PlayerPrefs.GetInt("Level2Unlock") == 0)
+        {
+            LevelTwoButton.interactable = false;
+        }
+        else
+        {
+            LevelTwoButton.interactable = true;
+        }
+
+        if (PlayerPrefs.GetInt("Level3Unlock") == 0)
+        {
+            LevelThreeButton.interactable = false;
+        }
+        else
+        {
+            LevelThreeButton.interactable = true;
         }
     }
 

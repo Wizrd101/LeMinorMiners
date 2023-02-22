@@ -1055,6 +1055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuDiffTxt: {fileID: 1089493117}
   menuContTxt: {fileID: 2002424426}
+  LevelTwoButton: {fileID: 255830210}
+  LevelThreeButton: {fileID: 1237760716}
 --- !u!1 &840852023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,10 +1718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92d5eb3f719b204dbfe9558a048465c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelButtons:
-  - {fileID: 192882259}
-  - {fileID: 255830210}
-  - {fileID: 1237760716}
 --- !u!4 &1181547367
 Transform:
   m_ObjectHideFlags: 0

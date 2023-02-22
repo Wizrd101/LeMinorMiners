@@ -12,7 +12,7 @@ public class PlayerShoot : MonoBehaviour
     public PlayerShoot playerShoot;
     public GameObject bullet;
     public int currentMag, maxMagSize = 6, currentReserves, maxReserveSize = 90;
-    private bool reload = false;
+    private bool reloading = false;
     public float speed;
     public float bulletLifeTime = 1.5f;
     public AudioClip shootSound;
@@ -43,12 +43,12 @@ public class PlayerShoot : MonoBehaviour
         timer += Time.deltaTime;
         if (Time.timeScale == 1)
         {
-            if (Input.GetButton("Fire1") &&  currentMag > 0 && reload == false)
+            if (Input.GetButton("Fire1") &&  currentMag > 0 && currentReserves > 0 && reloading == false)
             {
-                animator.SetTrigger("Active");
+                
                 if (Time.time - lastFired > 1 / fireRate)
                 {
-                 
+                    animator.SetTrigger("Active");
                     playerShoot.AutomaticFire();
                     currentMag--;
                     GetComponent<AudioSource>().PlayOneShot(shootSound);
@@ -63,13 +63,13 @@ public class PlayerShoot : MonoBehaviour
             {
                 reloadTimer = 0;
                 playerShoot.Reload();
-                reload = true;
+                reloading = true;
                 
             }
-            if (reloadTimer >= 1.75 )
+            else if (reloadTimer >= 1.75 )
             {
               
-                reload = false;
+                reloading = false;
             }
             
             //flipping the gun
