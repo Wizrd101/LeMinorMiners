@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
-    Slider bossHealthSlider;
+    public Slider bossHealthSlider;
 
     public int currentHealth;
     public int maxHealth;
 
     Scene currentScene;
-    public int sceneIndex;
+    int sceneIndex;
 
     void Start()
     {
@@ -23,19 +23,18 @@ public class BossHealth : MonoBehaviour
         // Variables
         if (PlayerPrefs.GetInt("diff") == 1)
         {
-
+            maxHealth = 70 + (sceneIndex * 10);
         }
         else if (PlayerPrefs.GetInt("diff") == 2)
         {
-
+            maxHealth = 110 + (sceneIndex * 10);
         }
         else
         {
-
+            maxHealth = 150 + (sceneIndex * 10);
         }
 
         // Slider
-        bossHealthSlider = GetComponent<Slider>();
         bossHealthSlider.maxValue = maxHealth;
         bossHealthSlider.value = currentHealth;
     }
@@ -44,18 +43,18 @@ public class BossHealth : MonoBehaviour
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
-            // CHANGE THIS
             currentHealth--;
-            // CHANGE THIS
             if (currentHealth <= 0)
             {
                 if (sceneIndex == 1)
                 {
-
+                    PlayerPrefs.SetInt("Level2Unlock", 1);
+                    SceneManager.LoadScene("LevelTwoScene");
                 }
                 else if (sceneIndex == 2)
                 {
-
+                    PlayerPrefs.SetInt("Level3Unlock", 1);
+                    SceneManager.LoadScene("LevelThreeScene");
                 }
                 else if (sceneIndex == 3)
                 {

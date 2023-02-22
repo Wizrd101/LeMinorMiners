@@ -12,10 +12,15 @@ public class IBMGFightTrigger : MonoBehaviour
 
     public GameObject boss;
 
+    public Canvas bossInfo;
+
     void Start()
     {
         simpleAI = boss.GetComponent<SimpleMinerGhostAI>();
         complexAI= boss.GetComponent<IBMGAI>();
+
+        bossInfo = boss.GetComponent<Canvas>();
+        bossInfo.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -38,6 +43,7 @@ public class IBMGFightTrigger : MonoBehaviour
 
     void FightTriggerEvents()
     {
+        bossInfo.enabled = true;
         Debug.Log("Fight was triggered");
     }
 }
