@@ -10,6 +10,7 @@ TagManager:
   - PlayerDamage
   - DynamitePickup
   - PlayerBullet
+  - BossTrigger
   layers:
   - Default
   - TransparentFX
