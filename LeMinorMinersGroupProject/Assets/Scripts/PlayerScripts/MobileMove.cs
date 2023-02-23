@@ -14,12 +14,12 @@ public class MobileMove : MonoBehaviour
     public bool grounded = false;
 
     Rigidbody2D rb;
-    //Animator anim;
+    Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //anim = GetComponentInChildren<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -35,7 +35,7 @@ public class MobileMove : MonoBehaviour
             velocity.x = moveDir * moveSpeed;
             rb.velocity = velocity;
 
-            //anim.SetFloat("xInput", moveDir);
+            anim.SetFloat("xInput", moveDir);
 
             if (moveDir > 0)
             {
@@ -69,7 +69,7 @@ public class MobileMove : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, 100 * jumpSpeed));
             grounded = false;
-            //anim.SetTrigger("Jump");
+            anim.SetTrigger("Jump");
             Debug.Log("Jumped");
         }
         else
