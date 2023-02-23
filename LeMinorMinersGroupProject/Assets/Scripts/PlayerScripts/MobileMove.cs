@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MobileMove : MonoBehaviour
 {
+    IBMGFightTrigger ft;
+
     bool movable = true;
 
     public int moveDir = 0;
@@ -70,15 +72,10 @@ public class MobileMove : MonoBehaviour
             rb.AddForce(new Vector2(0, 100 * jumpSpeed));
             grounded = false;
             anim.SetTrigger("Jump");
-            Debug.Log("Jumped");
-        }
-        else
-        {
-            Debug.Log("Did not Jump");
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Ground")
         {
@@ -89,6 +86,11 @@ public class MobileMove : MonoBehaviour
         {
             movable = false;
         }
+
+        /*if (other.gameObject.tag == "BossTrigger")
+        {
+            ft.FightTriggerEvents();
+        }*/
     }
 
     private void OnTriggerExit2D(Collider2D other)

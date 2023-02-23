@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SimpleMinerGhostAI : MonoBehaviour
 {
+    IBMGFightTrigger ft;
+    public TextMeshProUGUI bossText;
+    public Slider bossSlider;
+
     Rigidbody2D rb;
     Animator anim;
 
@@ -42,14 +48,26 @@ public class SimpleMinerGhostAI : MonoBehaviour
             if (moveDir.x >= 0)
             {
                 Vector3 scale = transform.localScale;
-                scale.x = -1;
+                scale.x = -3;
                 transform.localScale = scale;
+                Vector3 textScale = bossText.transform.localScale;
+                textScale.x = -0.5f;
+                bossText.transform.localScale = textScale;
+                Vector3 sliderScale = bossSlider.transform.localScale;
+                sliderScale.x = -1.5f;
+                bossSlider.transform.localScale = sliderScale;
             }
             else
             {
                 Vector3 scale = transform.localScale;
-                scale.x = 1;
+                scale.x = 3;
                 transform.localScale = scale;
+                Vector3 textScale = bossText.transform.localScale;
+                textScale.x = 0.5f;
+                bossText.transform.localScale = textScale;
+                Vector3 sliderScale = bossSlider.transform.localScale;
+                sliderScale.x = 1.5f;
+                bossSlider.transform.localScale = sliderScale;
             }
         }
     }
