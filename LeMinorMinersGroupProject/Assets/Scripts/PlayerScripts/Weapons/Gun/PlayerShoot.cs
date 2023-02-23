@@ -43,7 +43,7 @@ public class PlayerShoot : MonoBehaviour
         timer += Time.deltaTime;
         if (Time.timeScale == 1)
         {
-            if (Input.GetButton("Fire1") &&  currentMag > 0 && currentReserves > 0 && reloading == false)
+            if (Input.GetButton("Fire1") &&  currentMag > 0 && reloading == false)
             {
                 
                 if (Time.time - lastFired > 1 / fireRate)

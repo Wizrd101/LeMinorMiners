@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 264f91d056004ec448fc037882da590f
+guid: 71f823863e3bb0741aa27ff497720795
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TOMDrillCarbine(Alternate)Fire_0
+      name: K7CarbineFire_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,20 +127,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.13868278, y: 0.50482893}
+      pivot: {x: 0.14, y: 0.5468307}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2657c2bfc902af45aff40dd772f9d4b
-      internalID: 1982757963
+      spriteID: 8c78148efb6349244af25ca8c987ed33
+      internalID: -1300535457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOMDrillCarbine(Alternate)Fire_1
+      name: K7CarbineFire_1
       rect:
         serializedVersion: 2
         x: 32
@@ -148,20 +148,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.111231804, y: 0.513361}
+      pivot: {x: 0.14, y: 0.5468307}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897754780f645ba4ca0e98a61234ae8e
-      internalID: -478152171
+      spriteID: 06d9297bacdfa4843b34a81efc949e3c
+      internalID: -1720638702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOMDrillCarbine(Alternate)Fire_2
+      name: K7CarbineFire_2
       rect:
         serializedVersion: 2
         x: 0
@@ -169,14 +169,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.14266486, y: 0.5161082}
+      pivot: {x: 0.14, y: 0.5468307}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c95331d1699184aba72b6e2c235c49
-      internalID: 268765808
+      spriteID: 2b08b474eff158e49a4a7c781764bcec
+      internalID: -1552695144
       vertices: []
       indices: 
       edges: []
@@ -192,9 +192,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TOMDrillCarbine(Alternate)Fire_0: 1982757963
-      TOMDrillCarbine(Alternate)Fire_1: -478152171
-      TOMDrillCarbine(Alternate)Fire_2: 268765808
+      K7CarbineFire_1: -1720638702
+      K7CarbineFire_0: -1300535457
+      K7CarbineFire_2: -1552695144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
