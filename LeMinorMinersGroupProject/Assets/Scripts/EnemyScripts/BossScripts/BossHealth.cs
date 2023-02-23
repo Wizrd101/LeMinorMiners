@@ -33,6 +33,7 @@ public class BossHealth : MonoBehaviour
         {
             maxHealth = 150 + (sceneIndex * 10);
         }
+        currentHealth = maxHealth;
 
         // Slider
         bossHealthSlider.maxValue = maxHealth;
