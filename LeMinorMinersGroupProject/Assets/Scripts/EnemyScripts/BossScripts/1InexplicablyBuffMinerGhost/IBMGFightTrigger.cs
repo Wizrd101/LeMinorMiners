@@ -20,14 +20,14 @@ public class IBMGFightTrigger : MonoBehaviour
 
     BoxCollider2D triggerCollider;
 
-    /*Vector3 rocks1;
-    Vector3 rocks2;
-    Vector3 rocks3;
-    Vector3 rocks4;
-    Vector3 rocks5;
-    Vector3 rocks6;
-    Vector3 rocks7;
-    Vector3 rocks8;*/
+    Vector3Int rocks1 = new Vector3Int(84, -34, 0);
+    Vector3Int rocks2 = new Vector3Int(84, -35, 0);
+    Vector3Int rocks3 = new Vector3Int(84, -36, 0);
+    Vector3Int rocks4 = new Vector3Int(84, -37, 0);
+    Vector3Int rocks5 = new Vector3Int(85, -34, 0);
+    Vector3Int rocks6 = new Vector3Int(85, -35, 0);
+    Vector3Int rocks7 = new Vector3Int(85, -36, 0);
+    Vector3Int rocks8 = new Vector3Int(85, -37, 0);
 
     void Start()
     {
@@ -62,7 +62,14 @@ public class IBMGFightTrigger : MonoBehaviour
     {
         bossInfo.enabled = true;
         triggerCollider.enabled = false;
-        //groundTilemap.SetTile(rocks1,rocksTile);
+        groundTilemap.SetTile(rocks1,rocksTile);
+        groundTilemap.SetTile(rocks2, rocksTile);
+        groundTilemap.SetTile(rocks3, rocksTile);
+        groundTilemap.SetTile(rocks4, rocksTile);
+        groundTilemap.SetTile(rocks5, rocksTile);
+        groundTilemap.SetTile(rocks6, rocksTile);
+        groundTilemap.SetTile(rocks7, rocksTile);
+        groundTilemap.SetTile(rocks8, rocksTile);
         Debug.Log("Fight was triggered");
     }
 }
