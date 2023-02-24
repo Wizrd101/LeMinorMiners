@@ -83,11 +83,18 @@ public class PlayerShoot : MonoBehaviour
             animator.SetBool("grounded", grounded);
             if (xInput < 0)
             {
-                spriteRenderer.flipX = true;
+                Vector3 scale = transform.localScale;
+                scale.y = -1;
+                scale.x = -1;
+                transform.localScale = scale;
             }
             else if (xInput > 0)
             {
-                spriteRenderer.flipX = false;
+                Vector3 scale = transform.localScale;
+                scale.y = 1;
+                scale.x = 1;
+
+                transform.localScale = scale;
             }
            
         }
