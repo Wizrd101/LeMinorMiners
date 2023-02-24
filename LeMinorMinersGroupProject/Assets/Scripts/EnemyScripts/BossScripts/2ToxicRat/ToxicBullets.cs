@@ -5,8 +5,6 @@ using UnityEngine.VFX;
 
 public class ToxicBullets : MonoBehaviour
 {
-    ULTRAI RatAI;
-
     Rigidbody2D rb;
 
     public float bulletSpeed;

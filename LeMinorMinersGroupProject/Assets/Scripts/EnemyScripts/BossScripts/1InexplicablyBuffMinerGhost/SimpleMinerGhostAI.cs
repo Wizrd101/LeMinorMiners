@@ -26,15 +26,15 @@ public class SimpleMinerGhostAI : MonoBehaviour
 
         if (PlayerPrefs.GetInt("diff") == 1)
         {
-            moveSpeed = 2.5f;
+            moveSpeed = 1.5f;
         }
         else if (PlayerPrefs.GetInt("diff") == 1)
         {
-            moveSpeed = 3f;
+            moveSpeed = 2f;
         }
         else
         {
-            moveSpeed = 3.5f;
+            moveSpeed = 2.5f;
         }
     }
 
