@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 7033355615781403195}
   m_Layer: 0
   m_Name: ToxicRat
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -809,7 +809,7 @@ MonoBehaviour:
   bulletPos3: {fileID: 0}
   bulletPos4: {fileID: 0}
   bulletPos5: {fileID: 0}
-  bulletSpeed: 4.5
+  bulletTemp: 0
   fireTimer: 0
   fireSpeed: 0
   fightTriggered: 0
