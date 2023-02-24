@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using Random = UnityEngine.Random;
 
 
 public class PlayerShoot : MonoBehaviour
@@ -20,7 +22,9 @@ public class PlayerShoot : MonoBehaviour
     float reloadTimer = 0.0f;
     public float shootDelay;
     public static bool grounded = false;
-    
+    bool canFire = false; 
+   
+
     Animator animator;
     SpriteRenderer spriteRenderer;
 
@@ -32,6 +36,7 @@ public class PlayerShoot : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        canFire = false;
 
     }
 
@@ -43,18 +48,19 @@ public class PlayerShoot : MonoBehaviour
         timer += Time.deltaTime;
         if (Time.timeScale == 1)
         {
-            if (Input.GetButton("Fire1") &&  currentMag > 0 && reloading == false)
+            if (currentMag > 0 && reloading == false && Input.GetButton("Fire1"))
             {
-                
+                canFire= true;
                 if (Time.time - lastFired > 1 / fireRate)
                 {
-                    animator.SetTrigger("Active");
+                   
                     playerShoot.AutomaticFire();
                     currentMag--;
                     GetComponent<AudioSource>().PlayOneShot(shootSound);
                     timer = 0;
                 }
             }
+            
 
             //reload when r is pressed
             reloadTimer += Time.deltaTime;
@@ -63,12 +69,12 @@ public class PlayerShoot : MonoBehaviour
             {
                 reloadTimer = 0;
                 playerShoot.Reload();
-                reloading = true;
+                
                 
             }
             else if (reloadTimer >= 1.75 )
             {
-              
+              canFire= false;
                 reloading = false;
             }
             
@@ -89,7 +95,8 @@ public class PlayerShoot : MonoBehaviour
 
     public void Reload()
     {
-        if( currentMag < maxMagSize)
+        reloading = true;
+        if ( currentMag < maxMagSize)
         {
             animator.SetTrigger("reload");
         }
@@ -112,14 +119,19 @@ public class PlayerShoot : MonoBehaviour
      //full auto
     public void AutomaticFire()
     {
-        lastFired = Time.time;
-        GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = -Camera.main.transform.position.z;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        Vector3 shootDirection = mousePosition - transform.position;
-        shootDirection.Normalize();
-        bulletClone.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
-        Destroy(bulletClone, bulletLifeTime);
+        if (canFire == true)
+        {
+
+            animator.SetTrigger("Active");
+            lastFired = Time.time;
+            GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition.z = -Camera.main.transform.position.z;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Vector3 shootDirection = mousePosition - transform.position;
+            shootDirection.Normalize();
+            bulletClone.GetComponent<Rigidbody2D>().velocity = shootDirection * speed;
+            Destroy(bulletClone, bulletLifeTime);
+        }
     }
 }

@@ -133,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c78148efb6349244af25ca8c987ed33
-      internalID: -1300535457
+      spriteID: 0920bbac1445ab440aa9d28e31a5d3ec
+      internalID: 512096074
       vertices: []
       indices: 
       edges: []
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d9297bacdfa4843b34a81efc949e3c
-      internalID: -1720638702
+      spriteID: b746da09135499d4db0f137c8246424f
+      internalID: -2125166937
       vertices: []
       indices: 
       edges: []
@@ -169,14 +169,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.14, y: 0.5468307}
+      pivot: {x: 0.15, y: 0.5468307}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b08b474eff158e49a4a7c781764bcec
-      internalID: -1552695144
+      spriteID: 7e8d12f90d6cf6648b6d341bd3e3f6b3
+      internalID: -1517049514
       vertices: []
       indices: 
       edges: []
@@ -192,9 +192,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      K7CarbineFire_1: -1720638702
-      K7CarbineFire_0: -1300535457
-      K7CarbineFire_2: -1552695144
+      K7CarbineFire_1: -2125166937
+      K7CarbineFire_0: 512096074
+      K7CarbineFire_2: -1517049514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
