@@ -69,6 +69,9 @@ public class SimpleMinerGhostAI : MonoBehaviour
                 sliderScale.x = 1.5f;
                 bossSlider.transform.localScale = sliderScale;
             }
+
+            anim.SetFloat("XMove", moveDir.x);
+            anim.SetFloat("YMove", moveDir.y);
         }
     }
 
