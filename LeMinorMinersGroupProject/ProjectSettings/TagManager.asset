@@ -12,6 +12,7 @@ TagManager:
   - PlayerBullet
   - BossTrigger
   - PoisonPool
+  - EnemyDamage
   layers:
   - Default
   - TransparentFX

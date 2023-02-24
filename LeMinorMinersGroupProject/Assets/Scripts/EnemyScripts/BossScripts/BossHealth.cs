@@ -21,18 +21,7 @@ public class BossHealth : MonoBehaviour
         sceneIndex = currentScene.buildIndex - 1;
 
         // Variables
-        if (PlayerPrefs.GetInt("diff") == 1)
-        {
-            maxHealth = 70 + (sceneIndex * 10);
-        }
-        else if (PlayerPrefs.GetInt("diff") == 2)
-        {
-            maxHealth = 110 + (sceneIndex * 10);
-        }
-        else
-        {
-            maxHealth = 150 + (sceneIndex * 10);
-        }
+        maxHealth = 30 + (PlayerPrefs.GetInt("diff") * 40) + (sceneIndex * 10);
         currentHealth = maxHealth;
 
         // Slider
