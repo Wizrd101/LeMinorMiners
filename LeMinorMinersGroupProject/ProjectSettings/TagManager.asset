@@ -11,6 +11,8 @@ TagManager:
   - DynamitePickup
   - PlayerBullet
   - BossTrigger
+  - PoisonPool
+  - EnemyDamage
   layers:
   - Default
   - TransparentFX
