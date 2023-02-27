@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Tilemaps;
-using System.Numerics;
 
 public class ULTRFightTrigger : MonoBehaviour
 {

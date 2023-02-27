@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    Slider healthSlider;
+    public Slider healthSlider;
 
     public int currentHealth;
     public int maxHealth;
@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
 
         // Slider
-        healthSlider = GetComponent<Slider>();
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
     }
