@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4792474329462130167}
   m_Layer: 0
   m_Name: K7
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 1985237301, guid: e2c54b6215438a94e9eba2a98a722cc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   maxMagSize: 30
   currentReserves: 240
   maxReserveSize: 240
-  speed: 40
+  speed: 20
   bulletLifeTime: 1.5
   shootSound: {fileID: 8300000, guid: 3aa9afba5fd4bbf4da71b7e67692cab6, type: 3}
   shootDelay: 0

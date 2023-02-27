@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8391907058912221033}
   - component: {fileID: 8533210664261119980}
   - component: {fileID: 7693456115125124116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerNormal
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ Animator:
   m_GameObject: {fileID: 8391907058912221032}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86cf06a83b242cb41a1a4cca17f9cb4b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f68cd76f2dca5247895c62d980e2887, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -302,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8391907059278392369}
   - component: {fileID: 8391907059278392368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: NoLanternLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8391907059361565895}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BombThrowPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -444,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8391907059862792548}
   - component: {fileID: 8391907059862792551}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LanternLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 8391907060429826885}
   - component: {fileID: 8391907060429826884}
   - component: {fileID: 8391907060429826883}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -750,6 +750,10 @@ PrefabInstance:
       value: TOMLantern_0
       objectReference: {fileID: 0}
     - target: {fileID: 4466979134141506509, guid: 800dcfc74640b0e4fa3452d14df059b8, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466979134141506509, guid: 800dcfc74640b0e4fa3452d14df059b8, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -772,6 +776,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8391907058912221040}
     m_Modifications:
+    - target: {fileID: 5469484081951037706, guid: ddf0a24d237a73246b5b3266c9983797, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5469484081951037707, guid: ddf0a24d237a73246b5b3266c9983797, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -827,6 +835,14 @@ PrefabInstance:
     - target: {fileID: 5469484081951037750, guid: ddf0a24d237a73246b5b3266c9983797, type: 3}
       propertyPath: m_Name
       value: K7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469484081951037750, guid: ddf0a24d237a73246b5b3266c9983797, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469484081951037751, guid: ddf0a24d237a73246b5b3266c9983797, type: 3}
+      propertyPath: speed
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
